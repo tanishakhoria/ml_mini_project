@@ -1,7 +1,7 @@
 # Neural Network for Security Attack Detection (NSL-KDD)
-
+https://github.com/tanishakhoria/ml_mini_project
 UE24CS352A Machine Learning mini-project.
-Team: <NAME 1> (SRN) and <NAME 2> (SRN).
+Team: Tanisha Khoria PES2UG24CS551 and Sparsha Arun PES2UG24CS513.
 
 We reproduce the paper's neural network on NSL-KDD (Part 1), then extend it with a tuned ReLU MLP and a Random Forest baseline on 5-class and binary tasks (Part 2).
 
