@@ -1,0 +1,6 @@
+group,train,test
+DoS,45927,7460
+Normal,67343,9711
+Probe,11656,2421
+R2L,995,2752
+U2R,52,200
