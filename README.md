@@ -1,7 +1,8 @@
 # Neural Network for Security Attack Detection (NSL-KDD)
-https://github.com/tanishakhoria/ml_mini_project
+
 UE24CS352A Machine Learning mini-project.
-Team: Tanisha Khoria PES2UG24CS551 and Sparsha Arun PES2UG24CS513.
+Team: Tanisha Khoria (PES2UG24CS551) and Sparsha Arun (PES2UG24CS513).
+Repo: https://github.com/tanishakhoria/ml_mini_project
 
 We reproduce the paper's neural network on NSL-KDD (Part 1), then extend it with a tuned ReLU MLP and a Random Forest baseline on 5-class and binary tasks (Part 2).
 
@@ -22,10 +23,17 @@ python src/run_experiment.py
 Takes roughly 10-15 minutes on a CPU (10 seeds + a 50-epoch curve for Part 1). Outputs go to `results/`:
 `metrics.json`, `class_distribution.csv`, `paper_repro_accuracy_vs_epoch.png`, confusion matrices (`cm_*.png`), `mlp_loss_curve.png`.
 
+## Live demo
+```bash
+cd src && python demo.py          # --n 20 --seed 7 for other samples
+```
+Trains the paper's network once (~20 s, cached in `results/demo_model.joblib`), then classifies random test records (true label vs predicted, ALERT/ok). Run it once before the review so the model is cached.
+
 ## Structure
 ```
 src/download_data.py    fetch dataset
 src/run_experiment.py   preprocessing, training, evaluation, plots
+src/demo.py             live demo on random test records
 results/                generated metrics and figures
 data/                   dataset (git-ignored)
 ```
